@@ -13,7 +13,7 @@ if (!$db_selected) {
 $query = "SELECT p.project_id, p.project_name, p.elevator_pitch, p.description, p.url, pD.document FROM project p, projectDocuments pD, userProject uP WHERE p.project_id = uP.project_id AND p.project_id = pD.project_id AND uP.user_id = 'dorsag01' AND pD.main_image = 1;";
 $result = mysql_query($query,$dbc);
 if (!$result) {
-	die("ERROR!!! This was a crummy query.".mysql_errno() . ", ".mysql_error());
+	die("ERROR!!! This was a crummy query. ".mysql_errno() . ", ".mysql_error());
 }
 
 $forJSON = array();
