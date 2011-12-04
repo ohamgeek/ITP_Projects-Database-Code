@@ -23,11 +23,12 @@ if (isset($_REQUEST['netid'])) {
 	
 	while($row = mysql_fetch_array($result, MYSQL_NUM)) {
 		$forJSON[$count] = $row;
+		$count++;
 	}
 	
 	echo json_encode($forJSON);
 } else {
-	echo "Please specify a netid to pull data from the database. Your query might look like this: <br />http://itp.nyu.edu/~mah593/pdb_serving_scripts/get_all_portfolio.php<span style=\"color:#f00;\">?netid=abc123</span>";
+	echo "Please specify a netid to pull data from the database. Your query might look like this: <br />http://itp.nyu.edu/~mah593/pdb_serving_scripts/get_basic_portfolio.php<span style=\"color:#f00;\">?netid=abc123</span>";
 }
 
 ?>

@@ -1,0 +1,14 @@
+{	"netid" : "gg964",
+	"name" : "Gabriela G.",
+	"blog" : "URL here",
+	"facebook" : "URL here",
+	"googleplus" : "URL here",
+	"twitter" : "URL here",
+	"flickr" : "URL here",
+	"soundcloud" : "URL here",
+	"vimeo" : "URL here",
+	"youtube" : "URL here",
+	"linkedin" : "URL here",
+	"gdgt" : "URL here",
+	"github" : "URL here"
+}
